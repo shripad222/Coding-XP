@@ -1,0 +1,32 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-aec87d84c0ed8017.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-839588e0f3decf6f.js",
+      "static/chunks/main-app-ace6f5eb611261fd.js",
+      "static/chunks/app/_not-found/page-ec5a0e33261e7621.js"
+    ],
+    "/api/roboflow/route": [
+      "static/chunks/webpack-aec87d84c0ed8017.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-839588e0f3decf6f.js",
+      "static/chunks/main-app-ace6f5eb611261fd.js",
+      "static/chunks/app/api/roboflow/route-e3ac97a2f27e53a3.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-aec87d84c0ed8017.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-839588e0f3decf6f.js",
+      "static/chunks/main-app-ace6f5eb611261fd.js",
+      "static/chunks/app/layout-e3ac97a2f27e53a3.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-aec87d84c0ed8017.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-839588e0f3decf6f.js",
+      "static/chunks/main-app-ace6f5eb611261fd.js",
+      "static/chunks/app/page-3c3892d55cda6221.js"
+    ]
+  }
+}
