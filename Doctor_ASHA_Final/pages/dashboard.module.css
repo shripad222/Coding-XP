@@ -1,0 +1,90 @@
+
+.dashboard {
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d47a1; /* Dark blue */
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .logout-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .tabs button {
+    padding: 0.8rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 20px;
+    border: 2px solid #0d47a1;
+    background-color: #e3f2fd; /* Light blue */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .tabs button.active {
+    background-color: #0d47a1;
+    color: white;
+  }
+  
+  .appointments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .appointment-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .appointment-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .meeting-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .details-btn {
+    margin-top: 1rem;
+    margin-left: 10px; 
+    padding: 0.5rem 1rem;
+    background-color: #2196F3; /* Blue */
+    color: #111111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .empty-msg {
+    text-align: center;
+    color: #757575; /* Gray */
+  }
+  

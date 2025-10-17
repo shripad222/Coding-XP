@@ -1,0 +1,153 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form {
+  background-color: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: none;
+  border-color: #0070f3;
+}
+
+.radioGroup {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+}
+
+.radioLabel input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.radioLabel:hover .radioCheckmark {
+  background-color: #ccc;
+}
+
+.radioLabel input:checked ~ .radioCheckmark {
+  background-color: #0070f3;
+  border-color: #0070f3;
+}
+
+.radioCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioLabel input:checked ~ .radioCheckmark:after {
+  display: block;
+}
+
+.radioLabel .radioCheckmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.button {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.secondaryButton {
+  background-color: #f0f2f5;
+  color: #555;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #e0e2e5;
+  border-color: #ccc;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,38 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navLinks a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+}
+
+.userMenu .profile {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.userMenu .profile span {
+  margin: 0 0.5rem;
+}

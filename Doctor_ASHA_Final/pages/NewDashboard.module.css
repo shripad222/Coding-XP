@@ -1,0 +1,62 @@
+
+.dashboard {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.statCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.statCard p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.statCard h2 {
+  margin: 0.5rem 0 0;
+  font-size: 2rem;
+}
+
+.todaysSchedule {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.todaysSchedule h3 {
+  margin-top: 0;
+}
+
+.todaysSchedule ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todaysSchedule li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.todaysSchedule li:last-child {
+  border-bottom: none;
+}

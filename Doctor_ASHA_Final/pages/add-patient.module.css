@@ -1,0 +1,149 @@
+.container {
+  padding: 2rem;
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formWrapper {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box; /* Add this to the main wrapper as well */
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.inputGroup svg {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+/* Fix for textarea icon position */
+.textareaIcon {
+    top: 24px !important;
+    transform: none !important;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  box-sizing: border-box; /* This is the fix */
+  width: 100%;
+  padding: 1rem 1rem 1rem 2.5rem; /* Add padding for icon */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.2);
+}
+
+.formTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.fileInputWrapper {
+  box-sizing: border-box; /* This is the fix */
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fileInput {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fileInputLabel {
+  color: #555;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fileInputLabel svg {
+  font-size: 2rem;
+  color: #6e8efb;
+}
+
+.fileName {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+.submitButton {
+  width: 100%;
+  background: linear-gradient(90deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

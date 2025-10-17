@@ -1,0 +1,121 @@
+
+.container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.detailsCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.patientInfo {
+    flex: 2;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.infoLabelWrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #555;
+}
+
+.infoIcon {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+.infoValue {
+    color: #333;
+}
+
+.notesSection {
+    margin-top: 2rem;
+}
+
+.notesTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.notesContent {
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.prescriptionImageContainer {
+    flex: 1;
+    min-width: 250px;
+}
+
+.imageTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.prescriptionImage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statusPill {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.statusPending {
+    background-color: #ffc107;
+}
+
+.statusApproved {
+    background-color: #28a745;
+}
+
+.analyticsButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.analyticsButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.analyticsButton:hover {
+    background-color: #0056b3;
+}
